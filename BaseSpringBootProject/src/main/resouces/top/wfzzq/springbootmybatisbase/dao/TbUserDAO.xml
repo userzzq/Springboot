@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- Utils mapper -->
+<mapper namespace="top.wfzzq.springbootmybatisbase.dao.TbUserDAO">
+  <!-- 查询数据库用户名 -->
+  <select id="queryByName" parameterType="TbUser"
+    resultType="TbUser">
+    select uid,username,password,nickname,isEnable,regDate
+    from TbUser
+    where username=#{username} and isEnable='y'
+  </select>
+
+  <select id="queryByToken" parameterType="TbToken"
+    resultType="TbUser">
+    select uid,username,password,nickname,isEnable,regDate
+    from TbUser where uid=
+    (select info from TbTokenInfo where token=#{token} and infoKey='user') and isEnable='y'
+  </select>
+</mapper>

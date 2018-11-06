@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.wfzzq.dao.TbTokenDAO">
+  <!-- 新增token -->
+  <insert id="addToken" parameterType="TbToKenInfo">
+    insert into
+    TbTokenInfo(token,lastupdate)values(#{token},now())
+  </insert>
+  <!-- 更新token -->
+  <update id="updateToken" parameterType="TbTokenInfo">
+    update TbTokenInfo set
+    lastupdate=now() where token=#{token}
+  </update>
+  <!--查询token是否存在 -->
+  <select id="queryToken" parameterType="TbTokenInfo"
+    resultType="TbTokenInfo">
+    select token,uid,lastudate from TbTokenInfo
+    where
+    token=#{token} and timestampdiff(minute,lastupdate,now()) &lt;=30
+  </select>
+  <!-- 删除过期的token-->
+  <delete id="deleteTokens">
+    delete from TbTokenInfo where
+    timestampdiff(minute,lastupdate,now())&gt; 30
+  </delete>
+</mapper>

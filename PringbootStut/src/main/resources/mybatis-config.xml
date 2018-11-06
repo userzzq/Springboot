@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+  <typeAliases>
+    <package name="top.wfzzq.entity" />
+  </typeAliases>
+  <mappers>
+    <mapper resource="top/wfzzq/springboot/mapper/TbUser.xml" />
+    <mapper resource="top/wfzzq/springboot/mapper/Util.xml" />
+    <mapper resource="top/wfzzq/springboot/mapper/TbTokenInfo.xml" />
+    <mapper resource="top/wfzzq/springboot/mapper/Test.xml" />
+  </mappers>
+</configuration>

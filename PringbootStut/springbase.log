@@ -1,0 +1,366 @@
+2018-10-18 08:10:25.519  INFO 14052 --- [restartedMain] top.wfzzq.Application                    : Starting Application on DESKTOP-F7LHA4O with PID 14052 (D:\MyDevelop\workspaces\base\PringbootStut\bin\main started by wanghui in D:\MyDevelop\workspaces\base\PringbootStut)
+2018-10-18 08:10:25.528 DEBUG 14052 --- [restartedMain] top.wfzzq.Application                    : Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-18 08:10:25.529  INFO 14052 --- [restartedMain] top.wfzzq.Application                    : No active profile set, falling back to default profiles: default
+2018-10-18 08:10:25.555  INFO 14052 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2e371052: startup date [Thu Oct 18 08:10:25 CST 2018]; root of context hierarchy
+2018-10-18 08:10:26.601  INFO 14052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 20001 (http)
+2018-10-18 08:10:26.616  INFO 14052 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-18 08:10:26.618  INFO 14052 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-18 08:10:26.620  INFO 14052 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\MyDevelop\jdk8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;D:\Microsoft VS Code\bin;D:\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\PuTTY\;D:\apache-tomcat-8.5.32\apache-tomcat-8.5.32\bin;C:\Users\asus\AppData\Local\Microsoft\WindowsApps;C:\Users\asus\AppData\Roaming\npm;.]
+2018-10-18 08:10:26.695  INFO 14052 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-18 08:10:26.695  INFO 14052 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1141 ms
+2018-10-18 08:10:26.756  INFO 14052 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-10-18 08:10:26.760  INFO 14052 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-18 08:10:26.760  INFO 14052 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-18 08:10:26.760  INFO 14052 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-18 08:10:26.761  INFO 14052 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-18 08:10:27.117  INFO 14052 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-18 08:10:27.360  INFO 14052 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2e371052: startup date [Thu Oct 18 08:10:25 CST 2018]; root of context hierarchy
+2018-10-18 08:10:27.396  INFO 14052 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greeting]}" onto public top.wfzzq.entity.JsonMessage top.wfzzq.controller.GreetingController.index()
+2018-10-18 08:10:27.397  INFO 14052 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greeting/greeting]}" onto public top.wfzzq.entity.JsonMessage top.wfzzq.controller.GreetingController.greeting(top.wfzzq.entity.Greeting)
+2018-10-18 08:10:27.398  INFO 14052 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/exception]}" onto public top.wfzzq.entity.JsonMessage top.wfzzq.controller.TextIndexController.exception(java.lang.String) throws java.lang.Exception
+2018-10-18 08:10:27.398  INFO 14052 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/createToKen]}" onto public top.wfzzq.entity.JsonMessage top.wfzzq.controller.TextIndexController.createToken(top.wfzzq.entity.TbToKenInfo) throws java.lang.Exception
+2018-10-18 08:10:27.400  INFO 14052 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-18 08:10:27.400  INFO 14052 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-18 08:10:27.423  INFO 14052 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in myExeceptionHandler
+2018-10-18 08:10:27.586  INFO 14052 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-10-18 08:10:27.604  INFO 14052 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-18 08:10:27.605  INFO 14052 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-18 08:10:27.609  INFO 14052 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-18 08:10:27.616  INFO 14052 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-10-18 08:10:27.637  INFO 14052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 20001 (http) with context path ''
+2018-10-18 08:10:27.640  INFO 14052 --- [restartedMain] top.wfzzq.Application                    : Started Application in 2.34 seconds (JVM running for 2.945)
+2018-10-18 08:10:30.621 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 正在启动删除过期的token任务
+2018-10-18 08:10:30.637  INFO 14052 --- [pool-2-thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-18 08:10:30.746  INFO 14052 --- [pool-2-thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-18 08:10:30.752 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.TbTokenDAO.deleteTokens    : ==>  Preparing: delete from TbTokenInfo where timestampdiff(minute,lastupdate,now())> 3 
+2018-10-18 08:10:30.771 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.TbTokenDAO.deleteTokens    : ==> Parameters: 
+2018-10-18 08:10:30.773 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.TbTokenDAO.deleteTokens    : <==    Updates: 0
+2018-10-18 08:10:30.774 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 删除过期token任务完成:0
+2018-10-18 08:10:32.624 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:10:32.624 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:10:32.641 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:10:32.642 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:10:32
+2018-10-18 08:10:42.644 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:10:42.645 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:10:42.646 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:10:42.646 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:10:42
+2018-10-18 08:10:52.649 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:10:52.649 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:10:52.650 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:10:52.650 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:10:52
+2018-10-18 08:11:02.650 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:11:02.651 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:11:02.651 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:11:02.652 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:11:02
+2018-10-18 08:11:12.653 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:11:12.654 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:11:12.655 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:11:12.656 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:11:12
+2018-10-18 08:11:22.657 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:11:22.658 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:11:22.658 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:11:22.659 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:11:22
+2018-10-18 08:11:32.659 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:11:32.659 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:11:32.660 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:11:32.660 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:11:32
+2018-10-18 08:11:42.662 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:11:42.662 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:11:42.663 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:11:42.663 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:11:42
+2018-10-18 08:11:48.952  INFO 14052 --- [http-nio-20001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-18 08:11:48.952  INFO 14052 --- [http-nio-20001-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-18 08:11:48.974  INFO 14052 --- [http-nio-20001-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2018-10-18 08:11:48.990  WARN 14052 --- [http-nio-20001-exec-1] o.s.web.servlet.PageNotFound             : No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcherServlet'
+2018-10-18 08:11:49.000 ERROR 14052 --- [http-nio-20001-exec-1] top.wfzzq.config.MyExeceptionHandler     : 服务器发生错误：
+
+org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1210) ~[spring-webmvc-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:966) ~[spring-webmvc-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) [spring-webmvc-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) [spring-webmvc-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) [spring-webmvc-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+
+2018-10-18 08:11:49.050  WARN 14052 --- [http-nio-20001-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved exception caused by handler execution: org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /
+2018-10-18 08:11:52.665 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:11:52.665 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:11:52.666 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:11:52.666 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:11:52
+2018-10-18 08:12:02.670 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:12:02.670 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:12:02.671 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:12:02.671 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:12:02
+2018-10-18 08:12:12.672 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:12:12.672 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:12:12.673 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:12:12.673 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:12:12
+2018-10-18 08:12:22.673 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:12:22.674 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:12:22.675 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:12:22.675 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:12:22
+2018-10-18 08:12:32.676 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:12:32.676 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:12:32.677 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:12:32.677 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:12:32
+2018-10-18 08:12:42.679 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:12:42.679 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:12:42.680 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:12:42.680 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:12:42
+2018-10-18 08:12:52.682 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:12:52.683 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:12:52.683 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:12:52.684 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:12:52
+2018-10-18 08:13:02.685 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:13:02.686 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:13:02.687 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:13:02.688 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:13:02
+2018-10-18 08:13:12.689 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:13:12.689 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:13:12.690 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:13:12.690 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:13:12
+2018-10-18 08:13:22.690 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:13:22.690 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:13:22.691 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:13:22.691 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:13:22
+2018-10-18 08:13:32.692 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:13:32.692 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:13:32.693 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:13:32.693 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:13:32
+2018-10-18 08:13:42.694 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:13:42.695 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:13:42.695 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:13:42.696 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:13:42
+2018-10-18 08:13:52.702 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:13:52.703 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:13:52.703 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:13:52.703 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:13:52
+2018-10-18 08:14:02.704 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:14:02.705 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:14:02.705 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:14:02.706 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:14:02
+2018-10-18 08:14:12.707 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:14:12.708 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:14:12.709 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:14:12.709 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:14:12
+2018-10-18 08:14:22.710 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:14:22.710 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:14:22.711 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:14:22.711 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:14:22
+2018-10-18 08:14:32.712 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:14:32.713 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:14:32.713 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:14:32.713 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:14:32
+2018-10-18 08:14:42.714 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:14:42.714 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:14:42.715 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:14:42.715 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:14:42
+2018-10-18 08:14:52.717 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:14:52.717 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:14:52.718 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:14:52.718 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:14:52
+2018-10-18 08:15:02.719 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:15:02.719 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:15:02.720 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:15:02.720 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:15:02
+2018-10-18 08:15:12.721 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:15:12.721 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:15:12.722 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:15:12.722 DEBUG 14052 --- [pool-2-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:15:12
+2018-10-18 08:15:13.455  INFO 14052 --- [Thread-6] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2e371052: startup date [Thu Oct 18 08:10:25 CST 2018]; root of context hierarchy
+2018-10-18 08:15:13.457  INFO 14052 --- [Thread-6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-10-18 08:15:13.458  INFO 14052 --- [Thread-6] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-10-18 08:15:13.458  INFO 14052 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-18 08:15:13.464  INFO 14052 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-18 08:15:13.756  INFO 14052 --- [restartedMain] top.wfzzq.Application                    : Starting Application on DESKTOP-F7LHA4O with PID 14052 (D:\MyDevelop\workspaces\base\PringbootStut\bin\main started by wanghui in D:\MyDevelop\workspaces\base\PringbootStut)
+2018-10-18 08:15:13.757 DEBUG 14052 --- [restartedMain] top.wfzzq.Application                    : Running with Spring Boot v2.0.5.RELEASE, Spring v5.0.9.RELEASE
+2018-10-18 08:15:13.757  INFO 14052 --- [restartedMain] top.wfzzq.Application                    : No active profile set, falling back to default profiles: default
+2018-10-18 08:15:13.758  INFO 14052 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4e3effd6: startup date [Thu Oct 18 08:15:13 CST 2018]; root of context hierarchy
+2018-10-18 08:15:14.099  INFO 14052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 20001 (http)
+2018-10-18 08:15:14.100  INFO 14052 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-18 08:15:14.100  INFO 14052 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-18 08:15:14.120  INFO 14052 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-18 08:15:14.121  INFO 14052 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 363 ms
+2018-10-18 08:15:14.133  INFO 14052 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-10-18 08:15:14.134  INFO 14052 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-18 08:15:14.134  INFO 14052 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-18 08:15:14.134  INFO 14052 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-18 08:15:14.134  INFO 14052 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-18 08:15:14.203  INFO 14052 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-18 08:15:14.230  INFO 14052 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4e3effd6: startup date [Thu Oct 18 08:15:13 CST 2018]; root of context hierarchy
+2018-10-18 08:15:14.236  INFO 14052 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greeting]}" onto public top.wfzzq.entity.JsonMessage top.wfzzq.controller.GreetingController.index()
+2018-10-18 08:15:14.237  INFO 14052 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greeting/greeting]}" onto public top.wfzzq.entity.JsonMessage top.wfzzq.controller.GreetingController.greeting(top.wfzzq.entity.Greeting)
+2018-10-18 08:15:14.237  INFO 14052 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/exception]}" onto public top.wfzzq.entity.JsonMessage top.wfzzq.controller.TextIndexController.exception(java.lang.String) throws java.lang.Exception
+2018-10-18 08:15:14.237  INFO 14052 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/createToKen]}" onto public top.wfzzq.entity.JsonMessage top.wfzzq.controller.TextIndexController.createToken(top.wfzzq.entity.TbToKenInfo) throws java.lang.Exception
+2018-10-18 08:15:14.238  INFO 14052 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-18 08:15:14.239  INFO 14052 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-18 08:15:14.249  INFO 14052 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in myExeceptionHandler
+2018-10-18 08:15:14.282  INFO 14052 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-10-18 08:15:14.294  INFO 14052 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-18 08:15:14.295  INFO 14052 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-18 08:15:14.297  INFO 14052 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-18 08:15:14.300  INFO 14052 --- [restartedMain] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-10-18 08:15:14.304  INFO 14052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 20001 (http) with context path ''
+2018-10-18 08:15:14.304  INFO 14052 --- [restartedMain] top.wfzzq.Application                    : Started Application in 0.572 seconds (JVM running for 289.608)
+2018-10-18 08:15:14.306  INFO 14052 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2018-10-18 08:15:17.301 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 正在启动删除过期的token任务
+2018-10-18 08:15:17.301  INFO 14052 --- [pool-3-thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2018-10-18 08:15:17.305  INFO 14052 --- [pool-3-thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2018-10-18 08:15:17.305 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.TbTokenDAO.deleteTokens    : ==>  Preparing: delete from TbTokenInfo where timestampdiff(minute,lastupdate,now())> 3 
+2018-10-18 08:15:17.305 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.TbTokenDAO.deleteTokens    : ==> Parameters: 
+2018-10-18 08:15:17.306 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.TbTokenDAO.deleteTokens    : <==    Updates: 0
+2018-10-18 08:15:17.306 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 删除过期token任务完成:0
+2018-10-18 08:15:19.301 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:15:19.302 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:15:19.302 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:15:19.303 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:15:19
+2018-10-18 08:15:19.964  INFO 14052 --- [http-nio-20001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-18 08:15:19.964  INFO 14052 --- [http-nio-20001-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-18 08:15:19.972  INFO 14052 --- [http-nio-20001-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2018-10-18 08:15:19.973  WARN 14052 --- [http-nio-20001-exec-1] o.s.web.servlet.PageNotFound             : No mapping found for HTTP request with URI [/] in DispatcherServlet with name 'dispatcherServlet'
+2018-10-18 08:15:19.974 ERROR 14052 --- [http-nio-20001-exec-1] top.wfzzq.config.MyExeceptionHandler     : 服务器发生错误：
+
+org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1210) ~[spring-webmvc-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:966) ~[spring-webmvc-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) [spring-webmvc-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) [spring-webmvc-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) [spring-webmvc-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:800) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:806) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.34.jar:8.5.34]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+
+2018-10-18 08:15:19.978  WARN 14052 --- [http-nio-20001-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved exception caused by handler execution: org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /
+2018-10-18 08:15:29.303 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:15:29.303 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:15:29.304 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:15:29.304 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:15:29
+2018-10-18 08:15:39.305 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:15:39.305 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:15:39.305 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:15:39.306 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:15:39
+2018-10-18 08:15:49.308 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:15:49.308 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:15:49.308 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:15:49.309 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:15:49
+2018-10-18 08:15:59.310 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:15:59.310 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:15:59.310 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:15:59.311 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:15:59
+2018-10-18 08:16:09.313 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:16:09.313 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:16:09.314 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:16:09.314 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:16:09
+2018-10-18 08:16:19.315 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:16:19.316 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:16:19.316 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:16:19.317 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:16:19
+2018-10-18 08:16:29.318 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:16:29.318 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:16:29.319 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:16:29.319 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:16:29
+2018-10-18 08:16:39.320 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:16:39.320 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:16:39.321 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:16:39.321 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:16:39
+2018-10-18 08:16:49.322 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:16:49.323 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:16:49.323 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:16:49.323 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:16:49
+2018-10-18 08:16:59.325 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:16:59.325 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:16:59.325 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:16:59.326 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:16:59
+2018-10-18 08:17:09.327 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:17:09.328 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:17:09.329 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:17:09.329 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:17:09
+2018-10-18 08:17:19.330 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:17:19.330 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:17:19.331 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:17:19.331 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:17:19
+2018-10-18 08:17:29.333 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==>  Preparing: select now() 
+2018-10-18 08:17:29.333 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : ==> Parameters: 
+2018-10-18 08:17:29.333 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.dao.UtilsDAO.queryTime         : <==      Total: 1
+2018-10-18 08:17:29.334 DEBUG 14052 --- [pool-3-thread-1] top.wfzzq.service.impl.TaskServiceImpl   : 数据库当前时间：2018-十月-18 08:17:29
+2018-10-18 08:17:32.380  INFO 14052 --- [Thread-10] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4e3effd6: startup date [Thu Oct 18 08:15:13 CST 2018]; root of context hierarchy
+2018-10-18 08:17:32.382  INFO 14052 --- [Thread-10] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-10-18 08:17:32.382  INFO 14052 --- [Thread-10] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-10-18 08:17:32.384  INFO 14052 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2018-10-18 08:17:32.387  INFO 14052 --- [Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
