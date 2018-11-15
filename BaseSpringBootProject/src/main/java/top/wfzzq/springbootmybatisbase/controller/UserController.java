@@ -20,7 +20,7 @@ public class UserController {
 	@Autowired
 	private UserService userService;
    /**
-    * //127.0.0.1:22000/user/login?token=160572e7-0291-44f1-8417-3f8a733bdfa0&user.username=test&user.password=test-pwd
+    * //127.0.0.1:21000/user/login?token=160572e7-0291-44f1-8417-3f8a733bdfa0&user.username=test&user.password=test-pwd
     * @param model
     * @return
     * @throws Exception
