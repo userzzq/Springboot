@@ -20,3 +20,4 @@ select configKey,configValue,lastupdate from TbConfig;
 select uid,username,password,nickname,isEnable,regDate from TbUser;
 select token,lastupdate from TbToken;
 select token,infoKey,info,lastupdate from TbTokenInfo;
+select * from TbPageInfo;

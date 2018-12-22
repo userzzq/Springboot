@@ -26,7 +26,7 @@ public class UtilController {
     
     @RequestMapping("/validate.jpg")
     public void imageCode(UtilModel model,HttpServletResponse response)throws Exception{
-    	//http://127.0.0.1:2000/util/validate.jpg?token=
+    	//http://127.0.0.1:21000/util/validate.jpg?token=
     	//自定义应答类型为图片
     	///test/imageCode {"imageCode":""}
     	response.setContentType("image/jpeg");

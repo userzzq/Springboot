@@ -41,7 +41,7 @@
     where token=#{token} and
     infoKey='imagecode'
   </update>
-  <delete id="deleteImageUser" parameterType="TbTokenInfo">
+  <delete id="deleteImageCode" parameterType="TbTokenInfo">
     delete from
     TbTokenInfo where token=#{token} and infoKey='imagecode'
   </delete>
